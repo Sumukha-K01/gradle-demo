@@ -24,6 +24,9 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradle-project/gradlew
 
+      - name: Change directory
+        run: cd gradle-project
+
       - name: Run Tests
         run: ./gradle-project/gradlew test
 
