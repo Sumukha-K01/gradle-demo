@@ -22,13 +22,13 @@ jobs:
             distribution: 'temurin'
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x ./gradle-project/gradlew
 
       - name: Run Tests
-        run: ./gradlew test
+        run: ./gradle-project/gradlew test
 
       - name: Run Test Coverage
-        run: ./gradlew jacocoTestReport
+        run: ./gradle-project/gradlew jacocoTestReport
 
       - name: Generate JaCoCo Badge
         uses: cicirello/jacoco-badge-generator@v2
