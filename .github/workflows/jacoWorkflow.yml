@@ -26,11 +26,11 @@ jobs:
 #
       - name: Run Tests
         run: ./gradlew test
-        working-directory: gradle-demo/gradle-project
+        working-directory: ./gradle-project
 
       - name: Run Test Coverage
         run: ./gradlew jacocoTestReport
-        working-directory: gradle-demo/gradle-project
+        working-directory: ./gradle-project
 
       - name: Generate JaCoCo Badge
         uses: cicirello/jacoco-badge-generator@v2
