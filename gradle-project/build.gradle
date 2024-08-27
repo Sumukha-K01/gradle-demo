@@ -6,7 +6,7 @@ plugins {
 }
 jacocoTestReport {
     reports {
-        csv.required = true
+        xml.required = true
     }
 }
 group = 'com.suk'

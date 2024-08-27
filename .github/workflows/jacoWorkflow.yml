@@ -36,11 +36,11 @@ jobs:
         uses: cicirello/jacoco-badge-generator@v2
         with:
           generate-branches-badge: true
-          jacoco-csv-file: gradle-project/build/reports/jacoco/test/jacocoTestReport.csv
+          jacoco-csv-file: gradle-project/build/reports/jacoco/test/jacocoTestReport.xml
 
       - name: Upload JaCoCo coverage report
         uses: actions/upload-artifact@v2
         with:
             name: jacoco-report
             generate-branches-badge: true
-            path: gradle-project/build/reports/jacoco/test/jacocoTestReport.csv
+            path: gradle-project/build/reports/jacoco/test/jacocoTestReport.xml
